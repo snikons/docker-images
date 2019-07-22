@@ -19,9 +19,8 @@ RUN yum -y update && \
     yum -y install rh-python36-python-tools && \
     yum -y install python36-setuptools && \
     easy_install-3.6 -q pip && \
-    pip -q install meson && \
-    yum -y install ninja-build && \
-    yum -y install libmount-devel && \
-    yum -y install glib && \
-    yum -y install glib-devel && \
+    yum -y install glib2 && \
+    yum -y install glib2-devel && \
+    yum -y install libpcap && \
+    yum -y install libpcap-devel && \
     yum -y update
